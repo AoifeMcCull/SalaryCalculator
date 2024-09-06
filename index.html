@@ -8,30 +8,30 @@
 </head>
 <body>
   <header>
-    <h1>Salary Calculator</h1>
+    <h1 class="siteTitle">Salary Calculator</h1>
   </header>
   <main>
-    <h2>Add Employee</h2>
-      <form id="employeeForm">
-        <input type="text" id="firstName" placeholder="First Name" data-testid="firstNameInput">
-        <input type="text" id="lastName" placeholder="Last Name" data-testid="lastNameInput">
-        <input type="text" id="idNum" placeholder="ID" data-testid="idInput">
-        <input type="text" id="employeeTitle" placeholder="Title" data-testid="titleInput">
-        <input type="text" id="annualSalary" placeholder="Annual Salary" data-testid="annualSalaryInput">
-        <button type="button" onClick="submitEmployee()" data-testid="submitButton">Submit</button>
-      </form>
-    <h2>Employees</h2>
-      <table id="employeeTable">
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Annual Salary</th>
-          <th> </th>
-        </tr>
+    <h2 class="addEmployee">Add Employee</h2>
+    <form id="employeeForm">
+      <input type="text" id="firstName" placeholder="First Name" data-testid="firstNameInput">
+      <input type="text" id="lastName" placeholder="Last Name" data-testid="lastNameInput">
+      <input type="text" id="idNum" placeholder="ID" data-testid="idInput">
+      <input type="text" id="employeeTitle" placeholder="Title" data-testid="titleInput">
+      <input type="text" id="annualSalary" placeholder="Annual Salary" data-testid="annualSalaryInput">
+      <button type="button" onClick="submitEmployee()" data-testid="submitButton">Submit</button>
+    </form>
+    <h2 class="employeeTableTitle">Employees</h2>
+    <table id="employeeTable" class="employeeTable">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Annual Salary</th>
+        <th> </th>
+      </tr>
 
-      </table>
+    </table>
   </main>
   <footer id="foot">
     <p>Total Monthly: <span id="monthlyCostTotal"></span></p>

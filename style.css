@@ -1,3 +1,129 @@
+:root{
+    --main-color: #1E1E1E;
+    --secondary-color:#4a5d5a;
+    --background-color: #2c2c2c;
+    --text-color: #E0E0E0;
+    --border-color: #444444;
+    --accent-color: #697565;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
+    background-color: var(--main-color);
+    font-size: 18pt;
+    width: fit-content;
+    padding: 10px;
+    margin: 3px auto;
+    border-radius: 5px;
+}
+
+header {
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.siteTitle {
+    margin:auto;
+    background-color: var(--main-color);
+    font-size: 20pt;
+    font-weight: bold;
+    width:fit-content ;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+main {
+    width: 75%;
+    max-width: 600px;
+    margin:auto;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+}
+form input {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    width: 300px;
+    text-align: center;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+form button {
+    margin:auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    width: 300px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+
+.employeeTableTitle{
+    background-color: var(--main-color);
+    margin-top: 30px;
+}
+
+.employeeTable{
+    background-color: var(--main-color);
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th, td{
+    border: 1px solid var(--background-color);
+    padding: 0px 5px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+th{
+    background-color: var(--accent-color);
+}
+tbody:nth-child(even){
+    background-color: var(--main-color);
+}
+
+tbody:nth-child(odd){
+    background-color: var(--secondary-color);
+}
+
+footer{
+    margin:40px auto;
+    text-align: center;
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+
 .over-budget{
-    color:red
+    background-color: #c20000;
+    color:var(--text-color)
 }
