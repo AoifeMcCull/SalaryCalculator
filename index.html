@@ -12,16 +12,16 @@
   </header>
   <main>
     <h2>Add Employee</h2>
-      <form>
+      <form id="employeeForm">
         <input type="text" id="firstName" placeholder="First Name" data-testid="firstNameInput">
         <input type="text" id="lastName" placeholder="Last Name" data-testid="lastNameInput">
         <input type="text" id="idNum" placeholder="ID" data-testid="idInput">
         <input type="text" id="employeeTitle" placeholder="Title" data-testid="titleInput">
         <input type="text" id="annualSalary" placeholder="Annual Salary" data-testid="annualSalaryInput">
-        <button type="submit" onclick="submitEmployee()" data-testid="submitButton">Submit</button>
+        <button type="button" onClick="submitEmployee()" data-testid="submitButton">Submit</button>
       </form>
     <h2>Employees</h2>
-      <table>
+      <table id="employeeTable">
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
@@ -33,8 +33,8 @@
 
       </table>
   </main>
-  <footer>
-    <p>Total Monthly</p>
+  <footer id="foot">
+    <p>Total Monthly: <span id="monthlyCostTotal"></span></p>
   </footer>
 </body>
 </html>
